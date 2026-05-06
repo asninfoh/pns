@@ -103,7 +103,12 @@ def long_content():
 def related(current):
     items = random.sample([k for k in keywords if k != current], 6)
 
-    html = "<h6 class='fw-bold text-uppercase mb-3'><span class='text-danger'>/</span> RELATED POSTS <span class='text-danger'>/</span></h6>"
+    html = """
+    <h6 class='fw-bold text-uppercase mb-3'>
+        <span class='text-danger'>/</span> RELATED POSTS <span class='text-danger'>/</span>
+    </h6>
+    <div class="row g-3">
+    """
 
     for i in items:
         slug = i.replace(" ", "-")
@@ -111,10 +116,10 @@ def related(current):
         img = f"https://tse1.mm.bing.net/th?q={i}&w=400"
 
         html += f"""
-        <div class='col-md-4 mb-3'>
+        <div class='col-md-4 col-6 mb-3'>
             <div class='card post h-100 shadow-sm'>
                 <a href='{url}'>
-                    <img src='{img}' class='card-img-top' loading="lazy">
+                    <img src='{img}' class='card-img-top' loading="lazy" alt="{i}">
                 </a>
                 <div class='card-body'>
                     <a href='{url}' class='text-dark text-decoration-none'>
