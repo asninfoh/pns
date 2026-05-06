@@ -112,7 +112,7 @@ def related(current):
 
         html += f"""
         <div class='col-md-4 mb-3'>
-            <div class='card post h-100 shadow-none'>
+            <div class='card post h-100 shadow-sm'>
                 <a href='{url}'>
                     <img src='{img}' class='card-img-top' loading="lazy">
                 </a>
@@ -172,7 +172,7 @@ def build_header(title):
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg border-bottom bg-light sticky-top">
+<nav class="navbar navbar-expand-lg border-bottom bg-light shadow-sm sticky-top">
 <div class="container">
 
 <a class="navbar-brand fw-bold text-danger text-uppercase fs-4" href="{BASE_URL}/index.html">{get_site_title()}</a>
@@ -184,11 +184,11 @@ def build_header(title):
 <div class="collapse navbar-collapse" id="nav">
 
 <ul class="navbar-nav me-auto">
-    <li class="nav-item"><a class="nav-link" href="{BASE_URL}/index.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="{BASE_URL}/about.html">About</a></li>
-    <li class="nav-item"><a class="nav-link" href="{BASE_URL}/privacy.html">Privacy</a></li>
+    <li class="nav-item"><a class="nav-link" href="{BASE_URL}/index.html">Galeri Foto</a></li>
+    <li class="nav-item"><a class="nav-link" href="{BASE_URL}/about.html">Inspirasi</a></li>
+    <li class="nav-item"><a class="nav-link" href="{BASE_URL}/privacy.html">Karir</a></li>
     <li class="nav-item"><a class="nav-link" href="https://aridjaya.com" target='_blank'>Partner</a></li>
-    <li class="nav-item"><a class="nav-link" href="{BASE_URL}/contact.html">Contact</a></li>
+    <li class="nav-item"><a class="nav-link" href="{BASE_URL}/contact.html">Kontak</a></li>
 </ul>
 
 <form class="d-flex">
@@ -284,8 +284,8 @@ for kw in selected:
 <!-- ABOUT -->
 <div class="card mb-3">
 <div class="card-body bg-light rounded">
-<h5>About</h5>
-<p>Modern home decor ideas & inspiration blog for stylish living spaces, small apartments, and aesthetic interiors.</p>
+<h5>Tentang Kami</h5>
+<p>Blog ini menyajikan inspirasi seputar PNS cantik Indonesia, mulai dari gaya kerja, kehidupan wanita karir, hingga pesona alami yang elegan dan profesional.</p>
 
 <!-- ad2 -->
 <div class="text-center my-4">
@@ -298,16 +298,16 @@ for kw in selected:
 <!-- CATEGORIES -->
 <div class="card mb-4">
 <div class="card-body bg-light rounded">
-<h5>Categories</h5>
+<h5>Kategori</h5>
 <ul>
-    <li><a href="{BASE_URL}/living-room">Living Room</a></li>
-    <li><a href="{BASE_URL}/bedroom">Bedroom</a></li>
-    <li><a href="{BASE_URL}/kitchen">Kitchen</a></li>
-    <li><a href="{BASE_URL}/bathroom">Bathroom</a></li>
-    <li><a href="{BASE_URL}/apartment">Apartment</a></li>
-    <li><a href="{BASE_URL}/minimalist">Minimalist</a></li>
-    <li><a href="{BASE_URL}/hotel">Hotel</a></li>
-    <li><a href="{BASE_URL}/design">Design</a></li>
+    <li><a href="{BASE_URL}/pns-cantik">PNS Cantik</a></li>
+    <li><a href="{BASE_URL}/pns-berhijab">PNS Berhijab</a></li>
+    <li><a href="{BASE_URL}/gaya-kerja">Gaya Kerja</a></li>
+    <li><a href="{BASE_URL}/outfit-kantor">Outfit Kantor</a></li>
+    <li><a href="{BASE_URL}/wanita-karir">Wanita Karir</a></li>
+    <li><a href="{BASE_URL}/inspirasi">Inspirasi</a></li>
+    <li><a href="{BASE_URL}/kehidupan-pns">Kehidupan PNS</a></li>
+    <li><a href="{BASE_URL}/tips-cantik">Tips Cantik</a></li>
 </ul>
 </div>
 </div>
@@ -317,15 +317,15 @@ for kw in selected:
 <div class="card-body bg-light rounded">
 <h5>Popular Posts</h5>
 <ul>
-    <li><a href="{BASE_URL}/modern-kiving-room-ideas">Modern Living Room Ideas</a></li>
-    <li><a href="{BASE_URL}/bedroom-aesthetic-setup">Bedroom Aesthetic Setup</a></li>
-    <li><a href="{BASE_URL}/kitchen-organization-tips">Kitchen Organization Tips</a></li>
-    <li><a href="{BASE_URL}/small-apartment-hacks">Small Apartment Hacks</a></li>
-    <li><a href="{BASE_URL}/modern-interior-design">Modern Interior Design</a></li>
-    <li><a href="{BASE_URL}/small-space-ideas">Small Space Ideas</a></li>
-    <li><a href="{BASE_URL}/minimalist-home-setup">Minimalist Home Setup</a></li>
-    <li><a href="{BASE_URL}/luxury-room-styling">Luxury Room Styling</a></li>
-    <li><a href="{BASE_URL}/cozy-apartment-design">Cozy Apartment Design</a></li>
+    <li><a href="{BASE_URL}/pns-cantik-indonesia">PNS Cantik Indonesia</a></li>
+    <li><a href="{BASE_URL}/pns-cantik-berhijab">PNS Cantik Berhijab</a></li>
+    <li><a href="{BASE_URL}/gaya-pns-modern">Gaya PNS Modern</a></li>
+    <li><a href="{BASE_URL}/outfit-kantor-elegan">Outfit Kantor Elegan</a></li>
+    <li><a href="{BASE_URL}/wanita-karir-inspiratif">Wanita Karir Inspiratif</a></li>
+    <li><a href="{BASE_URL}/tips-tampil-menarik">Tips Tampil Menarik</a></li>
+    <li><a href="{BASE_URL}/pns-cantik-viral">PNS Cantik Viral</a></li>
+    <li><a href="{BASE_URL}/gaya-hijab-pns">Gaya Hijab PNS</a></li>
+    <li><a href="{BASE_URL}/kehidupan-wanita-pns">Kehidupan Wanita PNS</a></li>
 </ul>
 </div>
 </div>
@@ -336,35 +336,34 @@ for kw in selected:
 <div class="card-body bg-light rounded">
 <h5>Tags</h5>
     <span class="badge bg-dark">
-        <a class="text-white" target="_blank" href="{BASE_URL}/modern">Modern</a>
+        <a class="text-white" href="{BASE_URL}/pns-cantik">PNS Cantik</a>
     </span>
     <span class="badge bg-secondary">
-        <a class="text-white" target="_blank" href="{BASE_URL}/minimalist">Minimalist</a>
+        <a class="text-white" href="{BASE_URL}/wanita-karir">Wanita Karir</a>
     </span>
     <span class="badge bg-dark">
-        <a class="text-white" target="_blank" href="{BASE_URL}/luxury">Luxury</a>
+        <a class="text-white" href="{BASE_URL}/outfit-kantor">Outfit Kantor</a>
     </span>
     <span class="badge bg-secondary">
-        <a class="text-white" target="_blank" href="{BASE_URL}/small-space">Small Space</a>
+        <a class="text-white" href="{BASE_URL}/hijab-style">Hijab Style</a>
     </span>
     <span class="badge bg-dark">
-        <a class="text-white" target="_blank" href="{BASE_URL}/boho">Boho</a>
+        <a class="text-white" href="{BASE_URL}/tips-cantik">Tips Cantik</a>
     </span>
     <span class="badge bg-secondary">
-        <a class="text-white" target="_blank" href="{BASE_URL}/diy">DIY</a>
+        <a class="text-white" href="{BASE_URL}/inspirasi-wanita">Inspirasi</a>
     </span>
 </div>
 </div>
-
 
 <!-- NEWSLETTER -->
 <div class="card mb-4">
 <div class="card-body bg-light rounded">
-<h5>Newsletter</h5>
-<p>Get daily decor inspiration.</p>
-<input type="email" class="form-control mb-2" placeholder="Your email">
+<h5>Update Harian</h5>
+<p>Dapatkan inspirasi PNS cantik dan wanita karir setiap hari.</p>
+<input type="email" class="form-control mb-2" placeholder="Masukkan email">
 <a class="text-white" target="_blank" href="https://aridjaya.com">
-    <button class="btn btn-success btn-sm w-100 text-white">Subscribe</button>
+    <button class="btn btn-success btn-sm w-100 text-white">Masukkan email</button>
 </a>
 </div>
 </div>
@@ -415,7 +414,7 @@ for p in posts[:12]:
                 <img src="{img}" class="card-img-top" loading="lazy">
             </a>
             <div class="card-body">
-                <a href="posts/{p}" class="text-dark text-decoration-none">
+                <a href="posts/{p}" class="text-dark text-capitalize text-decoration-none">
                     <h6 class="fw-bold">{t}</h6>
                 </a>
             </div>
