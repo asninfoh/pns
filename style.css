@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.card-img-top {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+}
+
+.post-title {
+  border-bottom: 12px dotted #eee;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
