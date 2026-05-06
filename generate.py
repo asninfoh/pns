@@ -234,7 +234,7 @@ for kw in selected:
 <div class="container mt-4">
     <!-- ad1 -->
     <div class="text-center p-3 my-3">
-        <div id="ad1"></div>
+        <script type='text/javascript' src='https://adsterrah.github.io/banner/ad1.js'></script>
     </div>
     <div class="row">
         <!-- MAIN CONTENT -->
@@ -250,7 +250,7 @@ for kw in selected:
                 </p>
                 <!-- ad2 -->
                 <div class="text-center p-3 mb-3">
-                    <div id="ad2"></div>
+                    <script type='text/javascript' src='https://adsterrah.github.io/banner/ad2.js'></script>
                 </div>
                 <section>
                     {long_content()}
@@ -261,7 +261,7 @@ for kw in selected:
                 </section>
                 <!-- ad3 -->
                 <div class="text-center p-3 my-3">
-                    <div id="ad3"></div>
+                    <script type='text/javascript' src='https://adsterrah.github.io/banner/ad3.js'></script>
                 </div>
                 <!-- RELATED -->
                 <section>
@@ -281,7 +281,7 @@ for kw in selected:
                         wanita karir, hingga pesona alami yang elegan dan profesional.</p>
                     <!-- ad2 -->
                     <div class="text-center my-4">
-                        <div id="ad-sidebar"></div>
+                        <script type='text/javascript' src='https://adsterrah.github.io/banner/ad1.js'></script>
                     </div>
                 </div>
             </div>
@@ -347,13 +347,7 @@ for kw in selected:
     </div>
 </div>
 
-<!-- LOAD ADS (lebih aman) -->
-<script>
-document.getElementById('ad1').innerHTML = "<script src='https://adsterrah.github.io/banner/ad1.js'><\/script>";
-document.getElementById('ad2').innerHTML = "<script src='https://adsterrah.github.io/banner/ad2.js'><\/script>";
-document.getElementById('ad3').innerHTML = "<script src='https://adsterrah.github.io/banner/ad3.js'><\/script>";
-document.getElementById('ad-sidebar').innerHTML = "<script src='https://adsterrah.github.io/banner/ad2.js'><\/script>";
-</script>
+
 """
 
     html += build_footer()
@@ -458,7 +452,8 @@ window.onscroll = function() {{
 }};
 </script>
 
-<!-- ad -->
+<!-- adnativ -->
+<script type='text/javascript' src='https://adsterrah.github.io/banner/nativ.js'></script>
 
 </div>
 """
