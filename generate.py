@@ -227,147 +227,119 @@ for kw in selected:
 
     html += f"""
 <div class="container mt-4">
-
-<!-- ad1 -->
-<div class="text-center p-3 my-3">
-    <div id="ad1"></div>
-</div>
-
-<div class="row">
-
-<!-- MAIN CONTENT -->
-<main class="col-md-8">
-
-<article>
-
-<h1 class="post-title fw-bold pb-4 mb-4">{title}</h1>
-
-<a href="https://indonesiya.com" target="_blank" rel="noopener noreferrer">
-    <img alt="{title} - gambar utama" title="{title}" src="{image}" loading="lazy" class="w-100 img-fluid rounded mb-3">
-</a>
-
-<p class="text-center text-black-50">
-    <small>{title}</small>
-</p>
-
-<!-- ad2 -->
-<div class="text-center p-3 mb-3">
-    <div id="ad2"></div>
-</div>
-
-<section>
-{long_content()}
-</section>
-
-<h2 class="fw-bold my-4">{kw.title()}</h2>
-
-<section>
-{long_content()}
-</section>
-
-<!-- ad3 -->
-<div class="text-center p-3 my-3">
-    <div id="ad3"></div>
-</div>
-
-<!-- RELATED -->
-<section>
-{related(kw)}
-</section>
-
-</article>
-
-</main>
-
-<!-- SIDEBAR -->
-<aside class="col-md-4">
-
-<!-- ABOUT -->
-<div class="card mb-3">
-    <div class="card-body bg-light rounded">
-        <h6 class="fw-bold text-uppercase mb-3">
-            <span class="text-danger">/</span> TENTANG KAMI <span class="text-danger">/</span>
-        </h6>
-        <p>Blog ini menyajikan inspirasi seputar PNS cantik Indonesia, mulai dari gaya kerja, kehidupan wanita karir, hingga pesona alami yang elegan dan profesional.</p>
-
-        <!-- ad2 -->
-        <div class="text-center my-4">
-            <div id="ad-sidebar"></div>
-        </div>
+    <!-- ad1 -->
+    <div class="text-center p-3 my-3">
+        <div id="ad1"></div>
     </div>
-</div>
-
-<!-- CATEGORIES -->
-<div class="card mb-4">
-    <div class="card-body bg-light rounded">
-        <h6 class="fw-bold text-uppercase mb-3">
-            <span class="text-danger">/</span> KATEGORI <span class="text-danger">/</span>
-        </h6>
-        <ul class="list-unstyled">
-            <li><a href="{BASE_URL}/pns-cantik">PNS Cantik</a></li>
-            <li><a href="{BASE_URL}/pns-berhijab">PNS Berhijab</a></li>
-            <li><a href="{BASE_URL}/gaya-kerja">Gaya Kerja</a></li>
-            <li><a href="{BASE_URL}/outfit-kantor">Outfit Kantor</a></li>
-            <li><a href="{BASE_URL}/wanita-karir">Wanita Karir</a></li>
-            <li><a href="{BASE_URL}/inspirasi">Inspirasi</a></li>
-            <li><a href="{BASE_URL}/kehidupan-pns">Kehidupan PNS</a></li>
-            <li><a href="{BASE_URL}/tips-cantik">Tips Cantik</a></li>
-        </ul>
+    <div class="row">
+        <!-- MAIN CONTENT -->
+        <main class="col-md-8">
+            <article>
+                <h1 class="post-title fw-bold pb-4 mb-4">{title}</h1>
+                <a href="https://indonesiya.com" target="_blank" rel="noopener noreferrer">
+                    <img alt="{title} - gambar utama" title="{title}" src="{image}" loading="lazy"
+                        class="w-100 img-fluid rounded mb-3">
+                </a>
+                <p class="text-center text-black-50">
+                    <small>{title}</small>
+                </p>
+                <!-- ad2 -->
+                <div class="text-center p-3 mb-3">
+                    <div id="ad2"></div>
+                </div>
+                <section>
+                    {long_content()}
+                </section>
+                <h2 class="fw-bold my-4">{kw.title()}</h2>
+                <section>
+                    {long_content()}
+                </section>
+                <!-- ad3 -->
+                <div class="text-center p-3 my-3">
+                    <div id="ad3"></div>
+                </div>
+                <!-- RELATED -->
+                <section>
+                    {related(kw)}
+                </section>
+            </article>
+        </main>
+        <!-- SIDEBAR -->
+        <aside class="col-md-4">
+            <!-- ABOUT -->
+            <div class="card mb-3">
+                <div class="card-body bg-light rounded">
+                    <h6 class="fw-bold text-uppercase mb-3">
+                        <span class="text-danger">/</span> TENTANG KAMI <span class="text-danger">/</span>
+                    </h6>
+                    <p>Blog ini menyajikan inspirasi seputar PNS cantik Indonesia, mulai dari gaya kerja, kehidupan
+                        wanita karir, hingga pesona alami yang elegan dan profesional.</p>
+                    <!-- ad2 -->
+                    <div class="text-center my-4">
+                        <div id="ad-sidebar"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- CATEGORIES -->
+            <div class="card mb-4">
+                <div class="card-body bg-light rounded">
+                    <h6 class="fw-bold text-uppercase mb-3">
+                        <span class="text-danger">/</span> KATEGORI <span class="text-danger">/</span>
+                    </h6>
+                    <ul class="list-unstyled">
+                        <li><a href="{BASE_URL}/pns-cantik">PNS Cantik</a></li>
+                        <li><a href="{BASE_URL}/pns-berhijab">PNS Berhijab</a></li>
+                        <li><a href="{BASE_URL}/gaya-kerja">Gaya Kerja</a></li>
+                        <li><a href="{BASE_URL}/outfit-kantor">Outfit Kantor</a></li>
+                        <li><a href="{BASE_URL}/wanita-karir">Wanita Karir</a></li>
+                        <li><a href="{BASE_URL}/inspirasi">Inspirasi</a></li>
+                        <li><a href="{BASE_URL}/kehidupan-pns">Kehidupan PNS</a></li>
+                        <li><a href="{BASE_URL}/tips-cantik">Tips Cantik</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- POPULAR POSTS -->
+            <div class="card mb-4">
+                <div class="card-body bg-light rounded">
+                    <h6 class="fw-bold text-uppercase mb-3">
+                        <span class="text-danger">/</span> POPULER <span class="text-danger">/</span>
+                    </h6>
+                    <ul class="list-unstyled">
+                        <li><a href="{BASE_URL}/pns-cantik-indonesia">PNS Cantik Indonesia</a></li>
+                        <li><a href="{BASE_URL}/pns-cantik-berhijab">PNS Cantik Berhijab</a></li>
+                        <li><a href="{BASE_URL}/gaya-pns-modern">Gaya PNS Modern</a></li>
+                        <li><a href="{BASE_URL}/outfit-kantor-elegan">Outfit Kantor Elegan</a></li>
+                        <li><a href="{BASE_URL}/wanita-karir-inspiratif">Wanita Karir Inspiratif</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- TAG CLOUD -->
+            <div class="card mb-4">
+                <div class="card-body bg-light rounded">
+                    <h6 class="fw-bold text-uppercase mb-3">
+                        <span class="text-danger">/</span> TAGS <span class="text-danger">/</span>
+                    </h6>
+                    <a href="{BASE_URL}/pns-cantik" class="badge bg-dark text-white">PNS Cantik</a>
+                    <a href="{BASE_URL}/wanita-karir" class="badge bg-secondary text-white">Wanita Karir</a>
+                    <a href="{BASE_URL}/outfit-kantor" class="badge bg-dark text-white">Outfit Kantor</a>
+                    <a href="{BASE_URL}/hijab-style" class="badge bg-secondary text-white">Hijab Style</a>
+                </div>
+            </div>
+            <!-- NEWSLETTER -->
+            <div class="card mb-4">
+                <div class="card-body bg-light rounded">
+                    <h6 class="fw-bold text-uppercase mb-3">
+                        <span class="text-danger">/</span> UPDATE HARIAN <span class="text-danger">/</span>
+                    </h6>
+                    <p>Dapatkan inspirasi PNS cantik dan wanita karir setiap hari.</p>
+                    <input type="email" class="form-control mb-2" placeholder="Masukkan email">
+                    <a href="https://aridjaya.com" target="_blank" rel="noopener">
+                        <button class="btn btn-success btn-sm w-100">Daftar</button>
+                    </a>
+                </div>
+            </div>
+        </aside>
     </div>
-</div>
-
-<!-- POPULAR POSTS -->
-<div class="card mb-4">
-    <div class="card-body bg-light rounded">
-        <h6 class="fw-bold text-uppercase mb-3">
-            <span class="text-danger">/</span> POPULER <span class="text-danger">/</span>
-        </h6>
-        <ul class="list-unstyled">
-            <li><a href="{BASE_URL}/pns-cantik-indonesia">PNS Cantik Indonesia</a></li>
-            <li><a href="{BASE_URL}/pns-cantik-berhijab">PNS Cantik Berhijab</a></li>
-            <li><a href="{BASE_URL}/gaya-pns-modern">Gaya PNS Modern</a></li>
-            <li><a href="{BASE_URL}/outfit-kantor-elegan">Outfit Kantor Elegan</a></li>
-            <li><a href="{BASE_URL}/wanita-karir-inspiratif">Wanita Karir Inspiratif</a></li>
-        </ul>
-    </div>
-</div>
-
-<!-- TAG CLOUD -->
-<div class="card mb-4">
-    <div class="card-body bg-light rounded">
-        <h6 class="fw-bold text-uppercase mb-3">
-            <span class="text-danger">/</span> TAGS <span class="text-danger">/</span>
-        </h6>
-
-        <a href="{BASE_URL}/pns-cantik" class="badge bg-dark text-white">PNS Cantik</a>
-        <a href="{BASE_URL}/wanita-karir" class="badge bg-secondary text-white">Wanita Karir</a>
-        <a href="{BASE_URL}/outfit-kantor" class="badge bg-dark text-white">Outfit Kantor</a>
-        <a href="{BASE_URL}/hijab-style" class="badge bg-secondary text-white">Hijab Style</a>
-
-    </div>
-</div>
-
-<!-- NEWSLETTER -->
-<div class="card mb-4">
-    <div class="card-body bg-light rounded">
-        <h6 class="fw-bold text-uppercase mb-3">
-            <span class="text-danger">/</span> UPDATE HARIAN <span class="text-danger">/</span>
-        </h6>
-
-        <p>Dapatkan inspirasi PNS cantik dan wanita karir setiap hari.</p>
-
-        <input type="email" class="form-control mb-2" placeholder="Masukkan email">
-
-        <a href="https://aridjaya.com" target="_blank" rel="noopener">
-            <button class="btn btn-success btn-sm w-100">Daftar</button>
-        </a>
-
-    </div>
-</div>
-
-</aside>
-
-</div>
 </div>
 
 <!-- LOAD ADS (lebih aman) -->
