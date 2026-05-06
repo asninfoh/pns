@@ -382,7 +382,13 @@ for kw in selected:
     open(f"posts/{slug}.html", "w", encoding="utf-8").write(html)
 
 # ================= HOMEPAGE =================
-posts = sorted(os.listdir("posts"), reverse=True)
+
+# post terbaru di atas (lebih akurat dari reverse)
+posts = sorted(
+    os.listdir("posts"),
+    key=lambda x: os.path.getmtime(f"posts/{x}"),
+    reverse=True
+)
 
 home = build_header(get_site_title())
 
@@ -394,10 +400,11 @@ home += """
     <script type='text/javascript' src='https://adsterrah.github.io/banner/ad1.js'></script>
 </div>
 
-<div class="row">
+<div class="row" id="post-container">
 """
 
-for p in posts[:40]:
+# tampilkan awal (12 post pertama)
+for p in posts[:12]:
     t = p.replace(".html","").replace("-"," ").title()
     img = f"https://tse1.mm.bing.net/th?q={t}&w=400"
 
@@ -416,8 +423,61 @@ for p in posts[:40]:
     </div>
     """
 
-home += """
+# ================= INFINITE SCROLL SCRIPT =================
+home += f"""
 </div>
+
+<div id="loading" class="text-center my-3" style="display:none;">
+    <small>Loading...</small>
+</div>
+
+<script>
+let posts = {posts};   // semua data post
+let perPage = 12;
+let current = {len(posts[:12])};
+let loading = false;
+
+window.onscroll = function() {{
+    if (loading) return;
+
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {{
+        if (current >= posts.length) return;
+
+        loading = true;
+        document.getElementById("loading").style.display = "block";
+
+        setTimeout(() => {{
+            let container = document.getElementById("post-container");
+
+            for (let i = current; i < current + perPage && i < posts.length; i++) {{
+                let p = posts[i];
+                let t = p.replace(".html","").replaceAll("-"," ");
+
+                let html = `
+                <div class="col-md-3 mb-4">
+                    <div class="card post h-100 shadow-sm">
+                        <a href="posts/${{p}}">
+                            <img src="https://tse1.mm.bing.net/th?q=${{t}}&w=400" class="card-img-top" loading="lazy">
+                        </a>
+                        <div class="card-body">
+                            <a href="posts/${{p}}" class="text-dark text-decoration-none">
+                                <h6 class="fw-bold">${{t}}</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                `;
+
+                container.insertAdjacentHTML("beforeend", html);
+            }}
+
+            current += perPage;
+            loading = false;
+            document.getElementById("loading").style.display = "none";
+        }}, 500);
+    }}
+}};
+</script>
 
 <!-- ad -->
 
