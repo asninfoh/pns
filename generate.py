@@ -277,8 +277,7 @@ for kw in selected:
                     <h6 class="fw-bold text-uppercase mb-3">
                         <span class="text-danger">/</span> TENTANG KAMI <span class="text-danger">/</span>
                     </h6>
-                    <p>Blog ini menyajikan inspirasi seputar PNS cantik Indonesia, mulai dari gaya kerja, kehidupan
-                        wanita karir, hingga pesona alami yang elegan dan profesional.</p>
+                    <p>Inspirasi seputar PNS cantik, mulai dari gaya kerja, kehidupan wanita karir, hingga pesona alami yang elegan dan profesional.</p>
                     <!-- ad2 -->
                     <div class="text-center my-4">
                         <script type='text/javascript' src='https://adsterrah.github.io/banner/ad1.js'></script>
