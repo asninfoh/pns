@@ -31,67 +31,65 @@ open("last_index.txt","w").write(str(end))
 # ================= CONTENT =================
 def paragraph():
     base = [
-# ================= DESIGN FUNDAMENTALS =================
-"Choosing the right colors sets the mood of your room and shapes how people feel in the space.",
-"Color selection is one of the most important foundations in interior design because it defines atmosphere.",
-"Lighting plays a crucial role in interior design because it affects both comfort and visual depth.",
-"Natural light can make a small room feel more open, bright, and refreshing throughout the day.",
-"Furniture placement should balance movement flow, functionality, and visual harmony in the room.",
-"Proper space planning ensures that every corner of the room is used efficiently without feeling crowded.",
-"Textures add depth and personality, making a room feel more dynamic and visually engaging.",
-"Mixing different textures like wood, fabric, and metal can create a more premium interior look.",
-"Small decorative details often create the strongest visual impact in interior styling.",
-"Even minimal decor choices can significantly influence the overall aesthetic of a space.",
-"Natural materials like wood, stone, and plants create a calm and balanced environment indoors.",
-"Indoor plants not only improve aesthetics but also bring a fresh and relaxing atmosphere.",
-"A clean layout helps a room feel more spacious, organized, and comfortable to live in daily.",
-"Decluttering your space is one of the fastest ways to improve both visual and mental clarity.",
-"Good interior design improves not only appearance but also daily comfort and productivity.",
+# ================= KEPRIBADIAN & IMAGE =================
+"Menjadi PNS cantik bukan hanya soal penampilan, tapi juga sikap dan profesionalisme.",
+"Kepercayaan diri dan pembawaan yang elegan mencerminkan karakter yang kuat.",
+"Kecantikan dalam seragam terlihat dari cara membawa diri dengan penuh percaya diri.",
+"Penampilan yang rapi dan sikap yang sopan selalu memberi kesan positif.",
+"Kecantikan dari dalam sangat berpengaruh terhadap citra seorang wanita karier.",
+"Sikap tenang dan ramah membuat aura seseorang semakin menarik.",
+"Keanggunan sejati terlihat dari perilaku, bukan hanya dari wajah.",
+"Kepribadian yang kuat membuat wanita terlihat lebih menarik dan berkelas.",
 
-# ================= AI NATURAL BLOG STYLE =================
-"Minimalist design focuses on clarity and intentional use of space rather than emptiness.",
-"Minimalism in interior design is about removing distractions and highlighting essential elements.",
-"A well-balanced interior combines function and aesthetics without overwhelming the eye.",
-"Modern home design often emphasizes simplicity, neutral tones, and clean architectural structure.",
-"Layering materials and textures can make even simple spaces feel more premium and elegant.",
-"Interior design is essentially storytelling through furniture, color, lighting, and layout choices.",
-"Every well-designed room should have a clear focal point that naturally draws attention.",
-"A focal point can be a sofa, artwork, lighting fixture, or even a window view.",
-"Design harmony is achieved when all elements in a room feel visually connected and consistent.",
-"Consistency in style helps create a more professional and well-designed interior space.",
-"Modern interiors often blend simplicity with functionality to maximize comfort and usability.",
-"Open space layouts are becoming popular because they improve movement and natural lighting flow.",
-"Interior design is not just decoration, but also problem-solving for space efficiency.",
-"Good design always considers both visual appeal and real-life usability.",
+# ================= GAYA HIDUP =================
+"Gaya hidup seimbang membantu menjaga kecantikan dan produktivitas.",
+"Merawat kesehatan fisik dan mental penting untuk menjaga kepercayaan diri.",
+"Pikiran positif membuat seseorang terlihat lebih menarik secara alami.",
+"Perawatan diri sederhana sudah cukup untuk menjaga kecantikan alami.",
+"Rutinitas sehat mendukung kesuksesan karier dan kebahagiaan pribadi.",
+"Rasa percaya diri tumbuh dari kenyamanan terhadap diri sendiri.",
 
-# ================= LIFESTYLE + EMOTIONAL =================
-"A cozy interior can significantly improve relaxation and reduce daily stress levels.",
-"Your living space often reflects your personality, habits, and lifestyle choices.",
-"Warm lighting makes modern interiors feel more inviting and emotionally comfortable.",
-"Soft lighting in the evening helps create a calming environment after a long day.",
-"Simple changes in decor can completely refresh the mood of a room instantly.",
-"A well-designed home creates emotional comfort and a sense of peace after work.",
-"Interior design is deeply connected to emotional well-being and mental health.",
-"Living in a well-organized space can improve focus and reduce mental fatigue.",
-"Comfortable interiors encourage better rest, productivity, and daily motivation.",
-"A peaceful home environment helps improve overall quality of life significantly.",
+# ================= KEHIDUPAN PROFESIONAL =================
+"Penampilan profesional membantu membangun kepercayaan di tempat kerja.",
+"Disiplin dan tanggung jawab adalah ciri utama PNS yang sukses.",
+"Etos kerja yang baik meningkatkan citra diri dan karier.",
+"Konsistensi dalam bekerja menciptakan identitas profesional yang kuat.",
+"Integritas membuat seseorang lebih dihargai daripada sekadar penampilan.",
+"Profesionalisme adalah daya tarik utama dalam dunia kerja.",
 
-# ================= SEO / BLOG STYLE =================
-"Modern interior trends combine simplicity, elegance, and functional design principles.",
-"Contemporary home design focuses on balance between aesthetics and practical usage.",
-"Even small apartments can feel luxurious with the right design strategy.",
-"Smart storage solutions are essential for maintaining a clean and functional space.",
-"Built-in storage helps maximize space efficiency in small homes and apartments.",
-"Color psychology plays an important role in shaping interior mood and perception.",
-"Different colors can influence emotions, productivity, and relaxation levels.",
-"Combining neutral tones with accent colors creates strong visual balance.",
-"Accent walls are often used to highlight specific areas in a room design.",
-"Interior inspiration often comes from mixing multiple design styles creatively.",
-"Scandinavian design is popular for its simplicity, functionality, and bright atmosphere.",
-"Industrial design uses raw materials like metal and wood for a bold aesthetic.",
-"Bohemian style focuses on creativity, freedom, and layered decorative elements.",
-"Luxury interiors often emphasize detail, symmetry, and high-quality materials.",
-"Minimal upgrades in decor can significantly improve overall room appearance."
+# ================= EMOSI & PERCAYA DIRI =================
+"Percaya diri adalah bentuk kecantikan paling kuat yang dimiliki wanita.",
+"Perasaan bahagia akan terpancar melalui penampilan sehari-hari.",
+"Mencintai diri sendiri adalah dasar dari kecantikan sejati.",
+"Ketika nyaman dengan diri sendiri, aura positif akan terlihat.",
+"Keseimbangan emosi menciptakan kepribadian yang menenangkan.",
+"Sikap positif membuat seseorang terlihat lebih bersinar alami.",
+
+# ================= GAYA SOSIAL MEDIA / SEO =================
+"Konten tentang PNS cantik semakin populer di media sosial.",
+"Audiens modern lebih menyukai keaslian dan kesederhanaan.",
+"Berbagi rutinitas harian bisa menjadi inspirasi bagi banyak orang.",
+"Kecantikan alami dan profesionalisme menciptakan personal branding yang kuat.",
+"Konten sederhana dan jujur sering lebih menarik perhatian.",
+"Konsistensi dalam membuat konten membantu membangun audiens.",
+"Menjadi diri sendiri lebih menarik daripada terlihat sempurna.",
+"Citra diri yang kuat membuka peluang baru di dunia digital.",
+
+# ================= SENTUHAN LEMBUT & ROMANTIS =================
+"Wanita kuat dengan hati lembut memiliki pesona yang berbeda.",
+"Kecantikan akan terasa lebih bermakna jika disertai kebaikan.",
+"Senyuman tulus bisa membuat suasana menjadi lebih hangat.",
+"Percaya diri yang dibarengi kelembutan menciptakan daya tarik alami.",
+"Wanita yang menghargai dirinya akan lebih dihargai orang lain.",
+"Pesona sejati datang dari ketulusan hati.",
+
+# ================= KEHIDUPAN SEHARI-HARI =================
+"Momen sederhana dalam hidup sering mencerminkan kebahagiaan sejati.",
+"Produktif tanpa melupakan perawatan diri adalah kunci keseimbangan.",
+"Rutinitas yang rapi membantu menjaga fokus dan kenyamanan.",
+"Kebiasaan kecil yang positif bisa membawa perubahan besar.",
+"Menikmati hal sederhana membuat hidup terasa lebih berarti.",
+"Konsistensi dalam keseharian membangun kepercayaan diri jangka panjang.",
     ]
     sentence = random.choice(base)
     if random.random() > 0.5:
@@ -260,10 +258,6 @@ for kw in selected:
     <script type='text/javascript' src='https://adsterrah.github.io/banner/ad2.js'></script>
 </div>
 
-<h3 class="fw-bold my-4">Introduction</h3>
-{long_content()}
-
-<h3 class="fw-bold my-4">Why {kw.title()} Matters</h3>
 {long_content()}
 
 <!-- ad3 -->
@@ -271,18 +265,8 @@ for kw in selected:
     <script type='text/javascript' src='https://adsterrah.github.io/banner/ad3.js'></script>
 </div>
 
-<h3 class="fw-bold my-4">Ideas & Inspiration</h3>
+<h3 class="fw-bold my-4">{kw.title()}</h3>
 {long_content()}
-
-<h3 class="fw-bold my-4">Best Tips for {kw.title()}</h3>
-{long_content()}
-
-<h3 class="fw-bold my-4">Conclusion</h3>
-<p>
-In conclusion, {kw} is one of the most popular interior design topics today.
-By combining good lighting, proper layout, and creative decoration ideas,
-you can create a more comfortable and visually appealing space.
-</p>
 
 <!-- ad1 -->
 <div class="text-center p-3 my-3">
