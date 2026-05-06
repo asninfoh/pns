@@ -174,28 +174,22 @@ def build_header(title):
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg border-bottom bg-light shadow-sm sticky-top">
 <div class="container">
-
-<a class="navbar-brand fw-bold text-danger text-uppercase fs-4" href="{BASE_URL}/index.html">{get_site_title()}</a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-    <span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="nav">
-
-<ul class="navbar-nav me-auto">
-    <li class="nav-item"><a class="nav-link" href="{BASE_URL}/index.html">Galeri Foto</a></li>
-    <li class="nav-item"><a class="nav-link" href="{BASE_URL}/about.html">Inspirasi</a></li>
-    <li class="nav-item"><a class="nav-link" href="{BASE_URL}/privacy.html">Karir</a></li>
-    <li class="nav-item"><a class="nav-link" href="https://aridjaya.com" target='_blank'>Partner</a></li>
-    <li class="nav-item"><a class="nav-link" href="{BASE_URL}/contact.html">Kontak</a></li>
-</ul>
-
-<form class="d-flex">
-<input class="form-control me-2" placeholder="Search...">
-</form>
-
-</div>
+    <a class="navbar-brand fw-bold text-danger text-uppercase fs-4" href="{BASE_URL}/index.html">{get_site_title()}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="{BASE_URL}/galeri.html">Galeri</a></li>
+            <li class="nav-item"><a class="nav-link" href="{BASE_URL}/inspirasi.html">Inspirasi</a></li>
+            <li class="nav-item"><a class="nav-link" href="{BASE_URL}/karir.html">Karir</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://aridjaya.com" target='_blank'>Partner</a></li>
+            <li class="nav-item"><a class="nav-link" href="{BASE_URL}/kontak.html">Kontak</a></li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control me-2" placeholder="Search...">
+        </form>
+    </div>
 </div>
 </nav>
 
@@ -205,7 +199,7 @@ def build_header(title):
 def build_footer():
     return """
 <footer class="bg-dark text-white text-center p-3 mt-4 border-top">
-Supported by <a class='text-danger fw-bold text-decoration-none' href='https://aridjaya.com/'>Aridjaya</a>
+    Supported by <a class='text-danger fw-bold text-decoration-none' href='https://aridjaya.com/'>Aridjaya</a>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -283,66 +277,66 @@ for kw in selected:
 
 <!-- ABOUT -->
 <div class="card mb-3">
-<div class="card-body bg-light rounded">
-<h6 class="fw-bold text-uppercase mb-3">
-    <span class="text-danger">/</span> TENTANG KAMI <span class="text-danger">/</span>
-</h6>
-<p>Blog ini menyajikan inspirasi seputar PNS cantik Indonesia, mulai dari gaya kerja, kehidupan wanita karir, hingga pesona alami yang elegan dan profesional.</p>
+    <div class="card-body bg-light rounded">
+    <h6 class="fw-bold text-uppercase mb-3">
+        <span class="text-danger">/</span> TENTANG KAMI <span class="text-danger">/</span>
+    </h6>
+    <p>Blog ini menyajikan inspirasi seputar PNS cantik Indonesia, mulai dari gaya kerja, kehidupan wanita karir, hingga pesona alami yang elegan dan profesional.</p>
 
-<!-- ad2 -->
-<div class="text-center my-4">
-    <script type='text/javascript' src='https://adsterrah.github.io/banner/ad2.js'></script>
-</div>
+    <!-- ad2 -->
+    <div class="text-center my-4">
+        <script type='text/javascript' src='https://adsterrah.github.io/banner/ad2.js'></script>
+    </div>
 
-</div>
+    </div>
 </div>
 
 <!-- CATEGORIES -->
 <div class="card mb-4">
-<div class="card-body bg-light rounded">
-<h6 class="fw-bold text-uppercase mb-3">
-    <span class="text-danger">/</span> KATEGORI <span class="text-danger">/</span>
-</h6>
-<ul>
-    <li><a href="{BASE_URL}/pns-cantik">PNS Cantik</a></li>
-    <li><a href="{BASE_URL}/pns-berhijab">PNS Berhijab</a></li>
-    <li><a href="{BASE_URL}/gaya-kerja">Gaya Kerja</a></li>
-    <li><a href="{BASE_URL}/outfit-kantor">Outfit Kantor</a></li>
-    <li><a href="{BASE_URL}/wanita-karir">Wanita Karir</a></li>
-    <li><a href="{BASE_URL}/inspirasi">Inspirasi</a></li>
-    <li><a href="{BASE_URL}/kehidupan-pns">Kehidupan PNS</a></li>
-    <li><a href="{BASE_URL}/tips-cantik">Tips Cantik</a></li>
-</ul>
-</div>
+    <div class="card-body bg-light rounded">
+    <h6 class="fw-bold text-uppercase mb-3">
+        <span class="text-danger">/</span> KATEGORI <span class="text-danger">/</span>
+    </h6>
+    <ul>
+        <li><a href="{BASE_URL}/pns-cantik">PNS Cantik</a></li>
+        <li><a href="{BASE_URL}/pns-berhijab">PNS Berhijab</a></li>
+        <li><a href="{BASE_URL}/gaya-kerja">Gaya Kerja</a></li>
+        <li><a href="{BASE_URL}/outfit-kantor">Outfit Kantor</a></li>
+        <li><a href="{BASE_URL}/wanita-karir">Wanita Karir</a></li>
+        <li><a href="{BASE_URL}/inspirasi">Inspirasi</a></li>
+        <li><a href="{BASE_URL}/kehidupan-pns">Kehidupan PNS</a></li>
+        <li><a href="{BASE_URL}/tips-cantik">Tips Cantik</a></li>
+    </ul>
+    </div>
 </div>
 
 <!-- POPULAR POSTS -->
 <div class="card mb-4">
-<div class="card-body bg-light rounded">
-<h6 class="fw-bold text-uppercase mb-3">
-    <span class="text-danger">/</span> POPULER <span class="text-danger">/</span>
-</h6>
-<ul>
-    <li><a href="{BASE_URL}/pns-cantik-indonesia">PNS Cantik Indonesia</a></li>
-    <li><a href="{BASE_URL}/pns-cantik-berhijab">PNS Cantik Berhijab</a></li>
-    <li><a href="{BASE_URL}/gaya-pns-modern">Gaya PNS Modern</a></li>
-    <li><a href="{BASE_URL}/outfit-kantor-elegan">Outfit Kantor Elegan</a></li>
-    <li><a href="{BASE_URL}/wanita-karir-inspiratif">Wanita Karir Inspiratif</a></li>
-    <li><a href="{BASE_URL}/tips-tampil-menarik">Tips Tampil Menarik</a></li>
-    <li><a href="{BASE_URL}/pns-cantik-viral">PNS Cantik Viral</a></li>
-    <li><a href="{BASE_URL}/gaya-hijab-pns">Gaya Hijab PNS</a></li>
-    <li><a href="{BASE_URL}/kehidupan-wanita-pns">Kehidupan Wanita PNS</a></li>
-</ul>
-</div>
+    <div class="card-body bg-light rounded">
+    <h6 class="fw-bold text-uppercase mb-3">
+        <span class="text-danger">/</span> POPULER <span class="text-danger">/</span>
+    </h6>
+    <ul>
+        <li><a href="{BASE_URL}/pns-cantik-indonesia">PNS Cantik Indonesia</a></li>
+        <li><a href="{BASE_URL}/pns-cantik-berhijab">PNS Cantik Berhijab</a></li>
+        <li><a href="{BASE_URL}/gaya-pns-modern">Gaya PNS Modern</a></li>
+        <li><a href="{BASE_URL}/outfit-kantor-elegan">Outfit Kantor Elegan</a></li>
+        <li><a href="{BASE_URL}/wanita-karir-inspiratif">Wanita Karir Inspiratif</a></li>
+        <li><a href="{BASE_URL}/tips-tampil-menarik">Tips Tampil Menarik</a></li>
+        <li><a href="{BASE_URL}/pns-cantik-viral">PNS Cantik Viral</a></li>
+        <li><a href="{BASE_URL}/gaya-hijab-pns">Gaya Hijab PNS</a></li>
+        <li><a href="{BASE_URL}/kehidupan-wanita-pns">Kehidupan Wanita PNS</a></li>
+    </ul>
+    </div>
 </div>
 
 
 <!-- TAG CLOUD -->
 <div class="card mb-4">
-<div class="card-body bg-light rounded">
-<h6 class="fw-bold text-uppercase mb-3">
-    <span class="text-danger">/</span> TAGS <span class="text-danger">/</span>
-</h6>
+    <div class="card-body bg-light rounded">
+    <h6 class="fw-bold text-uppercase mb-3">
+        <span class="text-danger">/</span> TAGS <span class="text-danger">/</span>
+    </h6>
     <span class="badge bg-dark">
         <a class="text-white" href="{BASE_URL}/pns-cantik">PNS Cantik</a>
     </span>
@@ -361,21 +355,21 @@ for kw in selected:
     <span class="badge bg-secondary">
         <a class="text-white" href="{BASE_URL}/inspirasi-wanita">Inspirasi</a>
     </span>
-</div>
+    </div>
 </div>
 
 <!-- NEWSLETTER -->
 <div class="card mb-4">
-<div class="card-body bg-light rounded">
-<h6 class="fw-bold text-uppercase mb-3">
-    <span class="text-danger">/</span> UPDATE HARIAN <span class="text-danger">/</span>
-</h6>
-<p>Dapatkan inspirasi PNS cantik dan wanita karir setiap hari.</p>
-<input type="email" class="form-control mb-2" placeholder="Masukkan email">
-<a class="text-white" target="_blank" href="https://aridjaya.com">
-    <button class="btn btn-success btn-sm w-100 text-white">Masukkan email</button>
-</a>
-</div>
+    <div class="card-body bg-light rounded">
+    <h6 class="fw-bold text-uppercase mb-3">
+        <span class="text-danger">/</span> UPDATE HARIAN <span class="text-danger">/</span>
+    </h6>
+    <p>Dapatkan inspirasi PNS cantik dan wanita karir setiap hari.</p>
+    <input type="email" class="form-control mb-2" placeholder="Masukkan email">
+    <a class="text-white" target="_blank" href="https://aridjaya.com">
+        <button class="btn btn-success btn-sm w-100 text-white">Masukkan email</button>
+    </a>
+    </div>
 </div>
 
 
