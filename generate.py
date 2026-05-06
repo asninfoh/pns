@@ -103,7 +103,7 @@ def long_content():
 def related(current):
     items = random.sample([k for k in keywords if k != current], 6)
 
-    html = "<h5 class='fw-bold my-3'>Related Posts</h5><div class='row'>"
+    html = "<h6 class='fw-bold text-uppercase mb-3'><span class='text-danger'>/</span> RELATED POSTS <span class='text-danger'>/</span></h6>"
 
     for i in items:
         slug = i.replace(" ", "-")
@@ -284,7 +284,9 @@ for kw in selected:
 <!-- ABOUT -->
 <div class="card mb-3">
 <div class="card-body bg-light rounded">
-<h5>Tentang Kami</h5>
+<h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> TENTANG KAMI <span class="text-danger">/</span>
+</h6>
 <p>Blog ini menyajikan inspirasi seputar PNS cantik Indonesia, mulai dari gaya kerja, kehidupan wanita karir, hingga pesona alami yang elegan dan profesional.</p>
 
 <!-- ad2 -->
@@ -298,7 +300,9 @@ for kw in selected:
 <!-- CATEGORIES -->
 <div class="card mb-4">
 <div class="card-body bg-light rounded">
-<h5>Kategori</h5>
+<h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> KATEGORI <span class="text-danger">/</span>
+</h6>
 <ul>
     <li><a href="{BASE_URL}/pns-cantik">PNS Cantik</a></li>
     <li><a href="{BASE_URL}/pns-berhijab">PNS Berhijab</a></li>
@@ -315,7 +319,9 @@ for kw in selected:
 <!-- POPULAR POSTS -->
 <div class="card mb-4">
 <div class="card-body bg-light rounded">
-<h5>Popular Posts</h5>
+<h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> POPULER <span class="text-danger">/</span>
+</h6>
 <ul>
     <li><a href="{BASE_URL}/pns-cantik-indonesia">PNS Cantik Indonesia</a></li>
     <li><a href="{BASE_URL}/pns-cantik-berhijab">PNS Cantik Berhijab</a></li>
@@ -334,7 +340,9 @@ for kw in selected:
 <!-- TAG CLOUD -->
 <div class="card mb-4">
 <div class="card-body bg-light rounded">
-<h5>Tags</h5>
+<h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> TAGS <span class="text-danger">/</span>
+</h6>
     <span class="badge bg-dark">
         <a class="text-white" href="{BASE_URL}/pns-cantik">PNS Cantik</a>
     </span>
@@ -359,7 +367,9 @@ for kw in selected:
 <!-- NEWSLETTER -->
 <div class="card mb-4">
 <div class="card-body bg-light rounded">
-<h5>Update Harian</h5>
+<h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> UPDATE HARIAN <span class="text-danger">/</span>
+</h6>
 <p>Dapatkan inspirasi PNS cantik dan wanita karir setiap hari.</p>
 <input type="email" class="form-control mb-2" placeholder="Masukkan email">
 <a class="text-white" target="_blank" href="https://aridjaya.com">
